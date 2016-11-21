@@ -1,12 +1,24 @@
 /**
- * Change resolution while in fullScreen mode -- cropped
- * 2016-09-14 Processing 3.2.1
+ * FullScreen Resolution -- cropped
  *
- * Use image to display a PGraphics object,
- * call PGraphics.setSize to change resolution.
+ * Change the apparent resolution while in fullScreen mode.
+ * Uses a PGraphics object, call PGraphics.setSize()
+ * to change the pixel dimensions, then use image() to
+ * stretch the pixels to the screen space.
+ * This effect also works in non-fullScreen mode.
+ * Note that it is a visual effect -- not memory-efficient.
+ *
+ * Rather than force scaling the image, this 'cropped' version
+ * uses letterboxing to fit the image into the screen space
+ * while preserving the original aspect ratio.
+ * 
  * Press any key to cycle resolutions in this sketch.
- * Also works in non-fullScreen mode.
+ *
+ * @author Jeremy Douglass
+ * @since 2016-09-14
+ * Processing 3.2.1
  */
+
 PGraphics pg;
 int scaleWidth;
 int scaleHeight;

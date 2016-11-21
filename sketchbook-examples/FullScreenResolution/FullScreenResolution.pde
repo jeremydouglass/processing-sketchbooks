@@ -1,12 +1,20 @@
 /**
- * Change resolution while in fullScreen mode
- * 2016-09-13 Processing 3.2.1
+ * FullScreen Resolution 
  *
- * Use image to display a PGraphics object,
- * call PGraphics.setSize to change resolution.
+ * Change the apparent resolution while in fullScreen mode.
+ * Uses a PGraphics object, call PGraphics.setSize()
+ * to change the pixel dimensions, then use image() to
+ * stretch the pixels to the screen space.
+ * This effect also works in non-fullScreen mode.
+ * Note that it is a visual effect -- not memory-efficient.
+ *
  * Press any key to cycle resolutions in this sketch.
- * Also works in non-fullScreen mode.
+ *
+ * @author Jeremy Douglass
+ * @since 2016-09-13
+ * Processing 3.2.1
  */
+
 PGraphics pg;
 void setup(){
   fullScreen();
