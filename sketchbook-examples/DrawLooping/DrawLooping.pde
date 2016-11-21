@@ -1,14 +1,15 @@
 /**
- * Loop status
+ * Draw Looping
  *
  * The built-in "looping" variable returns the current
  * current sketch status of loop() vs noLoop().
- * This sketch demonstrates toggling looping with
- * spacebar.
+ * This sketch demonstrates toggling looping using
+ * several different methods -- try each by pressing
+ * the '1' '2' '3' and '4' keys.
  *
  * @author  Jeremy Douglass
- * @version 1.0
  * @since   2016-09-02
+ * Processing 3.1.2
  */
 
     boolean myLooping = true;
