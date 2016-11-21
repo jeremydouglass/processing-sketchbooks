@@ -1,16 +1,16 @@
 /**
- * String Saving and Loading
- * 2016-09-10 Jeremy Douglass
+ * String Save and Load
  * Processing 3.2.1 -- tested on OS X 10.10.5
- * 
+ * @author Jeremy Douglass
+ * @since 2016-09-10
  */
 
-String lineData1[] = {"apple banana", "cherry"};
-String lineData2[] = {"foo bar", "baz"};
-String lineData3[] = {"lorem ipsum", "sit"};
-String lineData4[] = {"head shoulders", "knees"};
-String sketchPathData[] = {"I'm text in the sketch path", ""};
-String dataPathData[]   = {"I'm text in the data path", ""};
+String lineData1[]      = {"lines 1: apple banana", "cherry"};
+String lineData2[]      = {"lines 2: foo bar", "baz"};
+String lineData3[]      = {"lines 3: lorem ipsum", "sit"};
+String lineData4[]      = {"lines 4: head shoulders", "knees"};
+String sketchPathData[] = {"paths 1: sketch path text: ", ""};
+String dataPathData[]   = {"paths 2: data path text:   ", ""};
 
 void setup(){
   println("** Save and load a bare filename: **");
@@ -36,7 +36,7 @@ String[] saveAndLoadStrings (String filename, String[] fileData){
   saveStrings(filename, fileData);
   String[] loaded = loadStrings(filename);
   print("Save/Loading: "); println(filename);
-  print("     Saving:  "); println(fileData[0]);
+  print("      Saving: "); println(fileData[0]);
   print("     Loading: "); println(loaded[0]);
   println();
   return loaded;
