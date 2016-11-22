@@ -1,13 +1,18 @@
 /** 
- * Corrupt Repeat File Rewrite
- * 2016-10 Processing 3.2.1
- * https:// forum.processing.org/two/discussion/comment/77002
- * Press space to corrupt.
+ * Image Corrupter
  * 
- * Test file from http:// nickyepstein.com/wp-content/uploads/2011/05/IMG_0274-950x150.jpg
- * Coded initially in 2004 Benjamin Gaulon -- corrupt.recyclism.com
- * Feel free to use / modify / Share this
- **/
+ * Swaps image bytes to further corrupt output every x seconds.
+ * Press space for corruption.
+ *
+ * @author Jeremy Douglass
+ * @since 2016-10-24
+ * Processing 3.2.1
+ * 
+ * Original image byte corruption by Benjamin Gaulon 2004
+ * -- corrupt.recyclism.com -- Feel free to use / modify / share this
+ *
+ * https:// forum.processing.org/two/discussion/comment/77002
+ */
 
 PImage img;
 String sourceFile = "./data/source.jpg";
