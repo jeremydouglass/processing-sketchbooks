@@ -23,23 +23,21 @@ void setup(){
 
 void draw(){
   background(0);
-
-  // start flipping
+  // start optional flipping
   if(keyPressed){
     pushMatrix();
-    translate(width,0);
-    scale(-1,1);
+      translate(width,0);
+      scale(-1,1);
   }
+  // flippable content
+  image(img,0,0); 
+  text("flippable", width/2, height/6);
 
-  // flip drawing
-  image(img,0,0);
-  triangle(0,height/3,width,height/2,0,2*height/3);
-  
-  // stop flipping
+  // stop optional flipping
   if(keyPressed){
     popMatrix();
   }
-  
-  // no flip drawing
-  rect(0,0,width/4,height/4); 
+  // unflippable content
+  rect(0,0,width/4,height/4);
+  text("unflippable", 20, height/4 + 20);
 }
