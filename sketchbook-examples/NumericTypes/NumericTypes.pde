@@ -1,10 +1,16 @@
 /**
- * Numeric Types in Processing
- * 2016-09-28 Jeremy Douglass
+ * Numeric Types
+ * 
+ * Some basic properties of Processing / Java numeric types.
+ * See code comments for details.
+ * 
+ * @since 2016-09-28
+ * @author Jeremy Douglass
  * Processing 3.2.1
- * Some basic properties of Java numeric types.
+ * https://forum.processing.org/two/discussion/comment/75633/#Comment_75633
  * based on http:// stackoverflow.com/questions/4097694/float-int-implicit-conversion
- **/
+ */
+
 float f;
 float fout;
 int i;
