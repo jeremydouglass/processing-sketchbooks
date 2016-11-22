@@ -1,8 +1,25 @@
-/**
+/** 
  * Point Spheres
- * 2016-10-29 Jeremy Douglass - Processing 3.2.1
- * https:// forum.processing.org/two/discussion/18779/move-a-single-point
- **/
+ * 
+ * Demonstration of two different methods for constructing
+ * a point sphere:
+ * 1. plane projection (elevation from the plane by z/z),
+ * 2. the Fibonacci sphere 
+ *
+ * The plane projection method is drawn in two halves, and has
+ * significant distortions around the equator.
+ * The Fibonacci method spirals and gives roughly evenly
+ * distributed points on the surface.
+ *
+ * @author Jeremy Douglass
+ * @since 2016-10-29
+ * Processing 3.2.1
+ * 
+ * Based on sketches by Jim Bumgardner, paolopastorino, koogs
+ * 
+ * Discussion
+ * https://forum.processing.org/two/discussion/18779/move-a-single-point
+ */
  
 void setup() {
   size(600, 600, P3D);
@@ -10,25 +27,20 @@ void setup() {
 }
 void draw() {
   background(0);
-
   stroke(32,32,32);
   pointPlane(width, height, 10); // w, h, spacing
-
   stroke(255,0,0);
   pushMatrix();
     translate(width/3,height/3);
     timedTumble(40);
     pointSphereFibonacci(width/5, 1000); // radius and number of points
   popMatrix();
-
   pushMatrix();
     translate(width*2/3,height*2/3);
     timedTumble(20);
     pointSphere(width/5); // radius of sphere
   popMatrix();
-
 }
-
 
 //// Timed 3D tumble, rotations cycle back to start every `duration` milliseconds
 void timedTumble(float duration){
