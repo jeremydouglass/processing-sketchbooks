@@ -11,11 +11,15 @@
  * Original image byte corruption by Benjamin Gaulon 2004
  * -- corrupt.recyclism.com -- Feel free to use / modify / share this
  *
+ * Source image from "There is No Space for Corruption in Rwanda" by Adam Jones
+ * https://commons.wikimedia.org/wiki/File:There_is_No_Space_for_Corruption_in_Rwanda_-_Billboard_in_Musanze-Ruhengeri_-_Northern_Rwanda_-_02.jpg
+ *
+ * Discussion:
  * https:// forum.processing.org/two/discussion/comment/77002
  */
 
 PImage img;
-String sourceFile = "./data/source.jpg";
+String sourceFile  = "./data/source.jpg";
 String corruptFile = "./data/corrupt.jpg";
 
 boolean timerOn = true; // turn timer on or off
@@ -23,7 +27,7 @@ int timerSpan = 5;      // number of seconds for timer to run
 int timer;
 
 void setup() {
-  size(950, 150);
+  size(360, 480);
   // copy clean 'sourceFile' file to working corruptable 'corruptFile'
   saveStream(corruptFile, sourceFile);
   img = loadImage(corruptFile);
@@ -51,7 +55,6 @@ void corruptTimer() {
   if ( millis() > (timer*1000) ) {
     println("Corrupting (time):", timer, "seconds");
     timer = timer+timerSpan;
-
     corrupt(corruptFile);
     img = loadImage(corruptFile);
     redraw();
@@ -70,8 +73,8 @@ void corrupt(String corruptFile) {
     int scrambleEnd = b.length;
     // scramble end
     int nbOfReplacements = int (random(1, 5));
-    // Number of Replacements - Go easy with this as too much will just kill the file
-    // Swap bits
+    // number of replacements - go easy as too much will kill the file
+    // swap bits
     for (int i = 0; i < nbOfReplacements; i++)
     {
       int PosA = int(random (scrambleStart, scrambleEnd));
@@ -80,7 +83,7 @@ void corrupt(String corruptFile) {
       bCopy[PosA] = bCopy[PosB];
       bCopy[PosB] = tmp;
     }
-    // Save the file ///
+    // save the file ///
     saveBytes(corruptFile, bCopy);
   }
 }
