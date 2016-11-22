@@ -1,6 +1,13 @@
-/** console typing
- *  2016-09-13 Jeremy Douglass
- *  Processing 3.2.1
+/** 
+ * Console Typing
+ *
+ * Typed keys are printed directly to the console.
+ * Does not support backspace / delete due to the
+ * nature of the console.
+ *
+ * @author Jeremy Douglass
+ * @since 2016-09-13
+ * Processing 3.2.1
  */
 void setup(){
   textAlign(CENTER,CENTER);
