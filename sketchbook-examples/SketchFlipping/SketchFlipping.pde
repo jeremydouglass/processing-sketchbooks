@@ -1,15 +1,23 @@
-/** Flip Mirror Sketches
- *  2016-10-23 Processing 3.2.1
- *  Flip or mirror drawing between pushMatrix &popMatrix.
- *  Useful for camera interaction.
- *  https:// forum.processing.org/two/discussion/18571/
- **/
+/**
+ * Sketch Flipping
+ * 
+ * Flipping mirroring, reversing, or mirroring sketch display elements.
+ * Particularly useful for camera interaction.
+ * Output can be mapped directly to input, with rendering mirrored.
+ * 
+ * Press any key to flip screen output.
+ * 
+ * @author Jeremy Douglass
+ * @since 2016-10-23
+ * Processing 3.2.1
+ * https://forum.processing.org/two/discussion/18571/
+ */
 
 PImage img;
 
 void setup(){
   size(512,512);
-  img = loadImage("https://forum.processing.org/processing-org.jpg");
+  img = loadImage("processing-org.jpg");
   strokeWeight(4);
 }
 
