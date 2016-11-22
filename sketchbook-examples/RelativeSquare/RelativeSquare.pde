@@ -11,7 +11,7 @@
  * corners of the square failing to meet.
  *
  * For a full implementation of turtle graphics, see Terrapin for Processing
- * by George Bashi and Ollie Glass.
+ * by George Bashi and Ollie Glass, or Turtle for Processing by Leah Buechley.
  *
  * @author Jeremy Douglass
  * @since 2016-10-14
