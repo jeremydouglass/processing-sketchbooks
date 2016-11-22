@@ -1,6 +1,9 @@
 /**
- * Quadratic Dots
- * 2016-11-20 Jeremy Douglass - Processing 3.2.3
+ * Quadratic Points
+ * plot a quadratic equation with points
+ * @since 2016-11-20
+ * @author Jeremy Douglass
+ * Processing 3.2.3
  * https://forum.processing.org/two/discussion/19180/plot-graph
  */
  
