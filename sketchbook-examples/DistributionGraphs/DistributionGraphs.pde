@@ -1,10 +1,14 @@
 /**
- * Four U-Distributions
- * 2016-10-05 Jeremy Douglass
- * One with randomGaussian(), one with sin().
- * Hold down any key to refresh.
+ * Distribution Graphs
+ *
+ * Four distributions -- a map, normal, random Gaussian, and sine.
+ * Press any key to refresh.
+ *
+ * @author Jeremy Douglass
+ * @since 2016-10-05
  * Processing 3.2.1
- **/
+ */
+
 float[] myGauss;
 float[] myMap;
 float[] myNorm;
@@ -44,7 +48,7 @@ void keyPressed(){
   mySine = sineDist(count, height/5);
   redraw();
 }
- 
+
 //// see also https:// processing.org/reference/sin_.html
 float[] sineDist(int count, float scale){
   float[] vals = new float[count];
@@ -55,8 +59,7 @@ float[] sineDist(int count, float scale){
   }
   return vals;
 }
- 
- 
+
 //// see also https:// processing.org/reference/randomGaussian_.html
 float[] gaussianDist(int count, float scale){
   float[] vals = new float[count];
