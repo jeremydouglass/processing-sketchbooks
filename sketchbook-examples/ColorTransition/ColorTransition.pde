@@ -1,9 +1,15 @@
-/** lerpColor background
- *  
- *  Press any key to fade in new background. Use a countdown to control linear interpolation
- *  between old and current colors; load progressive results with background().
- *  2016-09-20 Jeremy Douglass - Processing 3.2.1 
- *  forum.processing.org/two/discussion/18224/how-do-i-lerpcolor-between-two-background-color-values#latest
+/** 
+ * Color Transition
+ *
+ * Use a countdown to control linear interpolation between
+ * old and current colors; load progressive results with background().
+ * Press any key to fade in new background. 
+ *
+ * @author Jeremy Douglass
+ * @since 2016-09-21
+ * Processing 3.2.1
+ *
+ * forum.processing.org/two/discussion/18224/how-do-i-lerpcolor-between-two-background-color-values
  */
 
 color[] colorArray  = {color(0,0,0),color(255, 192, 0),color(200, 0, 0),color(126, 255, 0)};
@@ -22,6 +28,7 @@ void setup(){
     lerpRange = 20; //// edit the range to change how many frames a fade takes
     frameRate(10);  //// set frameRate to control seconds - 20 lerp / 10fps = 2 second fades
 }
+
 void draw(){
     if(lerpCount > 0){
       //// mix colors
@@ -39,6 +46,7 @@ void draw(){
     fill(colorArray[currentColor]);
     rect(width*.1, 0, width*.1, height*.1);
 }
+
 void keyReleased(){
     lastColor = currentColor;
     while (lastColor == currentColor)
