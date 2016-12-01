@@ -5,7 +5,7 @@
  * @since 2016-12-01
  * @author Jeremy Douglass
  * Processing 3.2.3
- * 
+ * https://forum.processing.org/two/discussion/comment/80886/
  */
 
 String[] sentences = {
