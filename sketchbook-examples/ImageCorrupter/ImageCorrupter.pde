@@ -49,6 +49,12 @@ void keyPressed() {
     img = loadImage(corruptFile);
     redraw();
   }
+  // press backspace to reset
+  if ((key==BACKSPACE)||(key==DELETE)) {
+    saveStream(corruptFile, sourceFile);
+    img = loadImage(corruptFile);
+    redraw();
+  }
 }
 
 void corruptTimer() {
