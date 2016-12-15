@@ -12,6 +12,7 @@ _Processing sketches for demonstrating basic aspects of the language and solutio
 | [PointSpheres](PointSpheres)                 | ![screenshot](PointSpheres/PointSpheres_1.png) |
 | [QuadraticPoints](QuadraticPoints)           | ![screenshot](QuadraticPoints/QuadraticPoints.png)|
 | [RelativeSquare](RelativeSquare)             | ![screenshot](RelativeSquare/RelativeSquare.png) |
+| [SphereLighting](SphereLighting)             | ![screenshot](SphereLighting/SphereLighting.png) |
 | ** input **                                  | |
 | [ConsoleTyping](ConsoleTyping)	             | |
 | [MouseCursors](MouseCursors)                 | |
