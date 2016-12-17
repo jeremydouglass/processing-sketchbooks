@@ -21,7 +21,7 @@ String[] sentences = {
   "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.",
   "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem."
 };
-
+String[] sentenceSet;
 float TEXTSIZE = 16;
 float MARGIN = 40;
 
@@ -32,7 +32,10 @@ void setup() {
 
 void draw() {
   background(0);
-  sentenceBox(subset(sentences, 0, second()%sentences.length), MARGIN, MARGIN, width-MARGIN-3, height-2*MARGIN, TEXTSIZE);
+  // select a number of sentences to display based on time
+  sentenceSet = subset(sentences, 0, second()%sentences.length);
+  // draw colored sentences in a box
+  sentenceBox(sentenceSet, MARGIN, MARGIN, width-MARGIN-3, height-2*MARGIN, TEXTSIZE);
 }
 
 void sentenceBox(String[] sentences, float x, float y, float w, float h, float tsize){
@@ -53,7 +56,7 @@ void sentenceBox(String[] sentences, float x, float y, float w, float h, float t
     colorMode(HSB, 360, 1, 1);
     fill( random(360), 1, 1);
     words = split(sentence, " ");
-    // loop through words, move to next line if it won't fit
+    // loop through words, move to next line if a word won't fit
     for (String word : words) {
       if (xoffset + textWidth(word) > w) {
         xoffset = x;
