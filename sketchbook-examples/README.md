@@ -5,24 +5,25 @@ _Processing sketches for demonstrating basic aspects of the language and solutio
 | Sketches    |     |
 | ----------- | --- |
 | ** data **                                   | |
-| [DistributionGraphs](DistributionGraphs)     | ![screenshot](DistributionGraphs/DistributionGraphs.png) |
+| [data/DistributionGraphs](DistributionGraphs)     | ![screenshot](data/DistributionGraphs/DistributionGraphs.png) |
 | [NumericTypes](NumericTypes)                 | |
 | [StringSaveAndLoad](StringSaveAndLoad)       | |
 | ** geometry **                               | |
-| [PointSpheres](PointSpheres)                 | ![screenshot](PointSpheres/PointSpheres_1.png) |
-| [QuadraticPoints](QuadraticPoints)           | ![screenshot](QuadraticPoints/QuadraticPoints.png)|
-| [RelativeSquare](RelativeSquare)             | ![screenshot](RelativeSquare/RelativeSquare.png) |
-| [SphereLighting](SphereLighting)             | ![screenshot](SphereLighting/SphereLighting.png) |
+| [geometry/PointSpheres](PointSpheres)                 | ![screenshot](geometry/PointSpheres/PointSpheres_1.png) |
+| [geometry/QuadraticPoints](QuadraticPoints)           | ![screenshot](geometry/QuadraticPoints/QuadraticPoints.png)|
+| [geometry/RandomWalkWinding](RandomWalkWinding)       | |
+| [geometry/RelativeSquare](RelativeSquare)             | ![screenshot](geometry/RelativeSquare/RelativeSquare.png) |
+| [geometry/SphereLighting](SphereLighting)             | ![screenshot](geometry/SphereLighting/SphereLighting.png) |
 | ** input **                                  | |
-| [ConsoleTyping](ConsoleTyping)	             | |
-| [MouseCursors](MouseCursors)                 | |
+| [input/ConsoleTyping](ConsoleTyping)               | |
+| [input/MouseCursors](MouseCursors)                 | |
 | ** pixels **                                 | |
-| [ColorTransition](ColorTransition)           | |
-| [FullScreenResolution](FullScreenResolution) | |
-| [FullScreenResolutionCropped](FullScreenResolutionCropped) | |
-| [ImageCorrupter](ImageCorrupter)             | ![screenshot](ImageCorrupter/data/corrupt-screenshot.png) |
-| [SketchFlipping](SketchFlipping)             | ![screenshot](SketchFlipping/SketchFlipping2.png) |
+| [pixels/ColorTransition](ColorTransition)           | |
+| [pixels/FullScreenResolution](FullScreenResolution) | |
+| [pixels/FullScreenResolutionCropped](FullScreenResolutionCropped) | |
+| [pixels/ImageCorrupter](ImageCorrupter)             | ![screenshot](pixels/ImageCorrupter/data/corrupt-screenshot.png) |
+| [pixels/SketchFlipping](SketchFlipping)             | ![screenshot](pixels/SketchFlipping/SketchFlipping2.png) |
 | ** text ** | |
-| [SentenceColoredText](SentenceColoredText)             | ![screenshot](SentenceColoredText/SentenceColoredText--screenshot.png) |
+| [text/SentenceColoredText](SentenceColoredText)             | ![screenshot](text/SentenceColoredText/SentenceColoredText--screenshot.png) |
 | ** time ** | |
-| [DrawLooping](DrawLooping)                   | |
+| [time/DrawLooping](DrawLooping)                   | |
