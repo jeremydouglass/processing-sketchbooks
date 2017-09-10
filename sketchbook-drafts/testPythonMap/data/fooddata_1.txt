@@ -1,0 +1,7 @@
+1998,1,Maryland,Salmonella,5
+1998,1,California,Salmonella,26
+1998,1,California,Salmonella,4
+1998,2,Nebraska,Clostridium,45
+1998,2,Florida,Clostridium,3
+1998,2,Florida,Clostridium,3
+1998,2,Colorado,Clostridium,10
